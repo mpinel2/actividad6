@@ -1,0 +1,14 @@
+<section>
+    <div class="container d-flex row">
+        <figure class="col-12 col-lg-6">
+            <img [src]="myUser?.image" [alt]="myUser?.first_name">
+        </figure>
+        <div class="col-12 col-lg-6">
+            <h3>{{myUser.first_name}}</h3>
+            <h3>{{myUser.last_name}}</h3>
+            <p><strong>Nombre de usuario:</strong> {{myUser.username}}</p>
+            <p><strong>Email:</strong> {{myUser.email}}</p>
+        </div>
+        <button class="button" [routerLink]="['/home']"> Volver a usuarios</button>
+    </div>
+</section>
